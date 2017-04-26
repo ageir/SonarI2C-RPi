@@ -2,7 +2,7 @@
 Raspberry Pi Python library for the Octosonar by Alastair Young.
 
 <b>Links to Alastair's pages:</b> <br>
-Alastair's Original Arduino library: [github.com](https://github.com/arielnh56/SonarI2C)<br>
+The Original Arduino library: [github.com](https://github.com/arielnh56/SonarI2C)<br>
 Blog: [redhunter.com](http://redhunter.com/blog/2016/04/28/sonari2c-multiple-hc-sr04-sensors-on-arduino-i2c/)<br>
 Hackaday: [hackaday.io](https://hackaday.io/project/19950-hc-sr04-i2c-octopus-octosonar)<br>
 Buy it on Tindie: [tindie.com](https://www.tindie.com/products/arielnh56/octosonar-connect-8-x-hc-sr04-to-arduino/)<br>
@@ -28,7 +28,7 @@ Raspberry Pi (any model) with Python. Tested with Python 2.7.9 and Python 3.4.2
 The Octosonar is a 5V device. You will need an I2C capable logic level converter or you WILL damage your Raspberry Pi! Do NOT connect the Octosonar directly to the Raspberry Pi!</b>
 
 It has been tested with this level converter from Adafruit.
-[https://www.adafruit.com/product/757](https://www.adafruit.com/product/757)
+[https://www.adafruit.com/product/757](https://www.adafruit.com/product/757)<br>
 SparkFun aslo has one.
 [https://www.sparkfun.com/products/12009](https://www.sparkfun.com/products/12009)
 
@@ -58,13 +58,11 @@ Example code is available in the examples directory in the repository.
 
 The code triggers all sonars in order (0-7) and prints a list containing the results. Press CTRL-C to cancel.
 
-You will need to adjust the line ```octosonar = SonarI2C(pi, int_gpio=25)``` to suit your setup. See documentation below for the class.
-
-Example: ```octosonar = SonarI2C(pi, int_gpio=25, bus=1, addr=0x3d, max_range_cm=400) ```
+You will need to adjust the line ```octosonar = SonarI2C(pi, int_gpio=25)``` to suit your setup. See documentation below for the class. Example: ```octosonar = SonarI2C(pi, int_gpio=25, bus=1, addr=0x3d, max_range_cm=400) ```
 
 Adjust the ```time.sleep(0.01)``` delay to suit your needs. Might be needed if you get a lot of echoes and false readings as the echos might spread to other sonars.
 
-SonarI2C_test.py 
+ 
 ```c
 from SonarI2C import SonarI2C
 import pigpio
@@ -111,7 +109,7 @@ finally:
         max_range_cm-- Maximum range for the sonars in centimeters.
                        default: 400
 
-Example: ```octosonar = SonarI2C(pi, int_gpio, bus=1, addr=0x3d, max_range_cm=400)```
+Example: ```octosonar = SonarI2C(pi, int_gpio=25, bus=1, addr=0x3d, max_range_cm=400)```
 
 ### SonarI2C.read()
 
