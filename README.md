@@ -23,6 +23,7 @@ Raspberry Pi (any model) with Python. Tested with Python 2.7.9 and Python 3.4.2
 
 ### Hardware Set Up
 
+![Breadboard Layout for the Octosonar with level converter](https://github.com/GoranLundberg/SonarI2C-RPi/blob/master/extras/Octosonar_I2C_bb.png)
 
 <b>Warning:<br>
 The Octosonar is a 5V device. You will need an I2C capable logic level converter or you WILL damage your Raspberry Pi! Do NOT connect the Octosonar directly to the Raspberry Pi!</b>
