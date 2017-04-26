@@ -1,10 +1,10 @@
 # SonarI2C-RPi
-Raspberry Pi Python library for the Octosonar by Alastair Young.
+Raspberry Pi Python library for the Octosonar breakout board by Alastair Young.
 
 <b>Links to Alastair's pages:</b> <br>
-The Original Arduino library: [github.com](https://github.com/arielnh56/SonarI2C)<br>
-Blog: [redhunter.com](http://redhunter.com/blog/2016/04/28/sonari2c-multiple-hc-sr04-sensors-on-arduino-i2c/)<br>
+The original Arduino library: [github.com](https://github.com/arielnh56/SonarI2C)<br>
 Hackaday: [hackaday.io](https://hackaday.io/project/19950-hc-sr04-i2c-octopus-octosonar)<br>
+Blog: [redhunter.com](http://redhunter.com/blog/2016/04/28/sonari2c-multiple-hc-sr04-sensors-on-arduino-i2c/)<br>
 Buy it on Tindie: [tindie.com](https://www.tindie.com/products/arielnh56/octosonar-connect-8-x-hc-sr04-to-arduino/)<br>
 
 ## Summary
@@ -15,9 +15,11 @@ The Octosonar is a breakout board for connecting eight ultrasonic sensors (HC-SR
 
 Will also work with a PCF8574 expander and a NOR gate. See Alastair's links above for more information on how to set that up.
 
+Note: This is not a direct port of the Arduino library. It works perfectly with the Octosonar but the functions and classes are not the same.
+
 ## Supported Platforms
 
-Raspberry Pi (any model) with Python. Tested with Python 2.7.9 and Python 3.4.2
+Raspberry Pi (any model) with Python. Tested with Python 2.7 and Python 3.4
 
 ## Getting Started
 
@@ -55,7 +57,7 @@ pip3 install pigpio
 
 ### Example Code
 
-Example code is available in the examples directory in the repository.
+Example code is available in the src directory in the repository.
 
 The code triggers all sonars in order (0-7) and prints a list containing the results. Press CTRL-C to cancel.
 
