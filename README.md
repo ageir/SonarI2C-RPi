@@ -32,7 +32,7 @@ The Octosonar is a 5V device. You will need an I2C capable logic level converter
 
 It has been tested with this level converter from Adafruit.
 [https://www.adafruit.com/product/757](https://www.adafruit.com/product/757)<br>
-SparkFun aslo has one.
+SparkFun also has one.
 [https://www.sparkfun.com/products/12009](https://www.sparkfun.com/products/12009)
 
 It should work with any I2C capable logic level converter.
@@ -53,6 +53,11 @@ pip install pigpio
 Python 3.x
 ```c
 pip3 install pigpio
+```
+
+The pigpio deamon needs to be started for the pigpio library to work.
+```c
+sudo pigpiod
 ```
 
 ### Example Code
