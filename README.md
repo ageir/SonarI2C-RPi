@@ -1,7 +1,7 @@
 # SonarI2C-RPi
-Raspberry Pi Python library for the Octosonar by Alastair Young, @arielnh56
+Raspberry Pi Python library for the Octosonar by Alastair Young.
 
-<b>Links to Alastair's pages: <br>
+<b>Links to Alastair's pages:</b> <br>
 Alastair's Original Arduino library: [github.com](https://github.com/arielnh56/SonarI2C)<br>
 Blog: [redhunter.com](http://redhunter.com/blog/2016/04/28/sonari2c-multiple-hc-sr04-sensors-on-arduino-i2c/)<br>
 Hackaday: [hackaday.io](https://hackaday.io/project/19950-hc-sr04-i2c-octopus-octosonar)<br>
@@ -9,7 +9,7 @@ Buy it on Tindie: [tindie.com](https://www.tindie.com/products/arielnh56/octoson
 
 ## Summary
 
-This is a Raspberry Pi Python library for the Octosonar by Alastair Young. (@arielnh56)
+This is a Raspberry Pi Python library for the Octosonar by Alastair Young.
 
 The Octosonar is a breakout board for connecting eight ultrasonic sensors (HC-SR04) to a microcontroller (Arduino). This library adds support for the Raspberry Pi as well. It's connected via I2C and only needs three pins (SCL/SDA and INT) on the Pi.
 
